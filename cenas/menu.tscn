@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://4a15g4t6g3nr" path="res://graphics/fonts/karmatic-arcade/ka1.ttf" id="1_nbnbt"]
 [ext_resource type="Texture2D" uid="uid://ffdc1t7wmouo" path="res://sprites/cenario/titulo.png" id="2_hsu4v"]
 [ext_resource type="Texture2D" uid="uid://ciqwv1bcjsecb" path="res://sprites/cenario/CREDITS.png" id="3_mmoso"]
+[ext_resource type="AudioStream" uid="uid://cq178rtwpmsvw" path="res://musicas/quebrando_cabeca_menu.wav" id="5_qvcyk"]
 
 [node name="Menu" type="Node2D" unique_id=1701848290]
 script = ExtResource("1_hsu4v")
@@ -39,5 +40,10 @@ theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("1_nbnbt")
 text = "JOGAR"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1704230714]
+stream = ExtResource("5_qvcyk")
+volume_db = 9.862
+autoplay = true
 
 [connection signal="pressed" from="BtnLoad" to="." method="_on_btn_load_pressed"]
