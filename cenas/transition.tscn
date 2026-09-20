@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://umd8y006s5m7"]
+[gd_scene format=3 uid="uid://c5iqeseabfamm"]
 
 [ext_resource type="Script" uid="uid://bf44nhkp0hbvk" path="res://scripts/transition.gd" id="1_f0i4t"]
 [ext_resource type="Material" uid="uid://bt148r0s6gfdv" path="res://materials/p5slash.tres" id="1_rerct"]
@@ -172,6 +172,7 @@ script = ExtResource("1_f0i4t")
 layer = 10
 
 [node name="RectOut" type="ColorRect" parent="CanvasLayer" unique_id=1721088257]
+modulate = Color(0.79607844, 0.1764706, 0, 1)
 material = ExtResource("1_rerct")
 anchors_preset = 15
 anchor_right = 1.0
@@ -182,6 +183,7 @@ mouse_filter = 2
 color = Color(0.3463011, 0.07208481, 0.4455058, 1)
 
 [node name="RectIn" type="ColorRect" parent="CanvasLayer" unique_id=1797022501]
+modulate = Color(0.3111086, 0.008662356, 0.34677753, 1)
 material = ExtResource("3_px735")
 anchors_preset = 15
 anchor_right = 1.0
@@ -212,19 +214,21 @@ mouse_filter = 2
 [node name="LblNext" type="Label" parent="CanvasLayer/TextContainer/VBoxContainer" unique_id=245655636]
 layout_mode = 2
 offset_transform_enabled = true
-theme_override_colors/font_color = Color(0.54004896, 0.24526232, 0, 1)
+theme_override_colors/font_color = Color(1, 0.63529414, 0, 1)
 theme_override_fonts/font = ExtResource("4_aevkw")
 theme_override_font_sizes/font_size = 96
-text = "EU E LA ELE"
+text = "QUEBRANDO A"
 horizontal_alignment = 1
 
 [node name="LblLevel" type="Label" parent="CanvasLayer/TextContainer/VBoxContainer" unique_id=2112482542]
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position_ratio = Vector2(1, 0)
+theme_override_colors/font_color = Color(1, 0.63529414, 0, 1)
 theme_override_fonts/font = ExtResource("4_aevkw")
 theme_override_font_sizes/font_size = 96
-text = "LA ELE E EU"
+text = "CABECA
+"
 horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TextContainer" unique_id=253673647]

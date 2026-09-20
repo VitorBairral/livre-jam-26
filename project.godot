@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="livre-jam-26"
-run/main_scene="uid://umd8y006s5m7"
+run/main_scene="uid://ds8kkt3cc3mte"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Transition="*uid://umd8y006s5m7"
+Transition="*uid://c5iqeseabfamm"
 
 [display]
 
